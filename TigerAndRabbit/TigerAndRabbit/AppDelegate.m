@@ -22,8 +22,8 @@
         self.window = [[UIWindow alloc] initWithFrame:[UIScreen mainScreen].bounds];
         self.window.rootViewController = [[TARBaseTabBarController shareInstance] getbaseTabBar];
         [self.window makeKeyAndVisible];
+        [[DoraemonManager shareInstance] install];
     }
-    [[DoraemonManager shareInstance] install];
     return YES;
 }
 

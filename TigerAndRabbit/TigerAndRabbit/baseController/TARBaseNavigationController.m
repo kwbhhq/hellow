@@ -13,6 +13,14 @@
 
 @implementation TARBaseNavigationController
 
+- (void)viewWillAppear:(BOOL)animated {
+    [super viewWillAppear:animated];
+    //设置导航栏不透明
+    self.navigationBar.translucent = NO;
+    //设置背景色，蓝
+    self.navigationBar.backgroundColor = [[UIColor alloc] initWithRed:1.0/255.0 green:136.0/255.0 blue:251.0/255.0 alpha:1.0];
+}
+
 - (void)viewDidLoad {
     [super viewDidLoad];
     

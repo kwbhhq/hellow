@@ -7,8 +7,11 @@
 
 #import "TARBaseTabBarController.h"
 #import "TARBaseNavigationController.h"
+#import "TARBaseViewController.h"
+#import "Masonry.h"
 
 @interface TARBaseTabBarController ()
+@property (nonatomic, strong)TARBaseViewController *baseView1;
 
 @end
 
@@ -23,10 +26,9 @@
     return _instance ;
 }
 
+#pragma market -- public
 - (TARBaseTabBarController *)getbaseTabBar {
-    UIViewController *view1 = [[UIViewController alloc] init];
-    view1.view.backgroundColor = [UIColor whiteColor];
-    TARBaseNavigationController *nav1 = [[TARBaseNavigationController alloc] initWithRootViewController:view1];
+    TARBaseNavigationController *nav1 = [[TARBaseNavigationController alloc] initWithRootViewController:self.baseView1];
     nav1.tabBarItem.title = @"1";
     
     UIViewController *view2 = [[UIViewController alloc] init];
@@ -42,6 +44,14 @@
     self.tabBar.backgroundColor = [UIColor whiteColor];
     [self setViewControllers:@[nav1,nav2,nav3]];
     return self;
+}
+
+- (TARBaseViewController *)baseView1 {
+    if (!_baseView1) {
+        _baseView1 = [[TARBaseViewController alloc] init];
+        _baseView1.view.backgroundColor = [UIColor whiteColor];
+    }
+    return _baseView1;
 }
 
 @end
