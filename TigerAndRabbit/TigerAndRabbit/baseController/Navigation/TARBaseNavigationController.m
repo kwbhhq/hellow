@@ -14,6 +14,15 @@
 
 @implementation TARBaseNavigationController
 
++ (instancetype)shareInstance {
+    static TARBaseNavigationController* _instance = nil;
+    static dispatch_once_t once ;
+    dispatch_once(&once, ^{
+        _instance = [[self alloc] init] ;
+    }) ;
+    return _instance ;
+}
+
 - (void)viewWillAppear:(BOOL)animated {
     [super viewWillAppear:animated];
     //设置导航栏不透明

@@ -1,0 +1,795 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 55;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		110FFA362933A01D00B7A51C /* BaseNavigationControllerManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 110FFA352933A01D00B7A51C /* BaseNavigationControllerManager.m */; };
+		110FFA392933A15D00B7A51C /* BaseNavigationConfigPlist.plist in Resources */ = {isa = PBXBuildFile; fileRef = 110FFA382933A15D00B7A51C /* BaseNavigationConfigPlist.plist */; };
+		110FFA3D2933AC8800B7A51C /* HomeNavigationController.m in Sources */ = {isa = PBXBuildFile; fileRef = 110FFA3C2933AC8800B7A51C /* HomeNavigationController.m */; };
+		110FFA422933C82300B7A51C /* HomeBaseViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 110FFA412933C82300B7A51C /* HomeBaseViewController.m */; };
+		116DDAEC27DE0CCF007AA812 /* viewBControllerViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 116DDAEB27DE0CCF007AA812 /* viewBControllerViewController.m */; };
+		11F4084427DDB26200609E7C /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 11F4084327DDB26200609E7C /* AppDelegate.m */; };
+		11F4084727DDB26200609E7C /* SceneDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 11F4084627DDB26200609E7C /* SceneDelegate.m */; };
+		11F4084A27DDB26200609E7C /* TARBaseViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 11F4084927DDB26200609E7C /* TARBaseViewController.m */; };
+		11F4084F27DDB26200609E7C /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 11F4084E27DDB26200609E7C /* Assets.xcassets */; };
+		11F4085527DDB26200609E7C /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 11F4085427DDB26200609E7C /* main.m */; };
+		11F4085F27DDB26200609E7C /* TigerAndRabbitTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 11F4085E27DDB26200609E7C /* TigerAndRabbitTests.m */; };
+		11F4086927DDB26200609E7C /* TigerAndRabbitUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = 11F4086827DDB26200609E7C /* TigerAndRabbitUITests.m */; };
+		11F4086B27DDB26200609E7C /* TigerAndRabbitUITestsLaunchTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 11F4086A27DDB26200609E7C /* TigerAndRabbitUITestsLaunchTests.m */; };
+		11FFC1AE27FB138600BD3CC0 /* TARBaseNavigationController.m in Sources */ = {isa = PBXBuildFile; fileRef = 11FFC1AD27FB138600BD3CC0 /* TARBaseNavigationController.m */; };
+		11FFC1B127FB158400BD3CC0 /* TARBaseTabBarController.m in Sources */ = {isa = PBXBuildFile; fileRef = 11FFC1B027FB158400BD3CC0 /* TARBaseTabBarController.m */; };
+		F803AEEBCD3CF1120F498C36 /* libPods-TigerAndRabbit.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 13A92C7FFB426F38EBFE5175 /* libPods-TigerAndRabbit.a */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		11F4085B27DDB26200609E7C /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 11F4083727DDB26200609E7C /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 11F4083E27DDB26200609E7C;
+			remoteInfo = TigerAndRabbit;
+		};
+		11F4086527DDB26200609E7C /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 11F4083727DDB26200609E7C /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 11F4083E27DDB26200609E7C;
+			remoteInfo = TigerAndRabbit;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		110FFA342933A01D00B7A51C /* BaseNavigationControllerManager.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = BaseNavigationControllerManager.h; sourceTree = "<group>"; };
+		110FFA352933A01D00B7A51C /* BaseNavigationControllerManager.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = BaseNavigationControllerManager.m; sourceTree = "<group>"; };
+		110FFA382933A15D00B7A51C /* BaseNavigationConfigPlist.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = BaseNavigationConfigPlist.plist; sourceTree = "<group>"; };
+		110FFA3B2933AC8800B7A51C /* HomeNavigationController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = HomeNavigationController.h; sourceTree = "<group>"; };
+		110FFA3C2933AC8800B7A51C /* HomeNavigationController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = HomeNavigationController.m; sourceTree = "<group>"; };
+		110FFA3E2933AE1800B7A51C /* BaseNavigationControllerProtocol.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = BaseNavigationControllerProtocol.h; sourceTree = "<group>"; };
+		110FFA402933C82300B7A51C /* HomeBaseViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = HomeBaseViewController.h; sourceTree = "<group>"; };
+		110FFA412933C82300B7A51C /* HomeBaseViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = HomeBaseViewController.m; sourceTree = "<group>"; };
+		114CF7952879AF9C002B265F /* ColorerDefine.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ColorerDefine.h; sourceTree = "<group>"; };
+		114CF7972879B2FB002B265F /* SystemSize.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SystemSize.h; sourceTree = "<group>"; };
+		116DDAEA27DE0CCF007AA812 /* viewBControllerViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = viewBControllerViewController.h; sourceTree = "<group>"; };
+		116DDAEB27DE0CCF007AA812 /* viewBControllerViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = viewBControllerViewController.m; sourceTree = "<group>"; };
+		11F4083F27DDB26200609E7C /* TigerAndRabbit.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = TigerAndRabbit.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		11F4084227DDB26200609E7C /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		11F4084327DDB26200609E7C /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		11F4084527DDB26200609E7C /* SceneDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SceneDelegate.h; sourceTree = "<group>"; };
+		11F4084627DDB26200609E7C /* SceneDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SceneDelegate.m; sourceTree = "<group>"; };
+		11F4084827DDB26200609E7C /* TARBaseViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = TARBaseViewController.h; sourceTree = "<group>"; };
+		11F4084927DDB26200609E7C /* TARBaseViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TARBaseViewController.m; sourceTree = "<group>"; };
+		11F4084E27DDB26200609E7C /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		11F4085327DDB26200609E7C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		11F4085427DDB26200609E7C /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		11F4085A27DDB26200609E7C /* TigerAndRabbitTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = TigerAndRabbitTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		11F4085E27DDB26200609E7C /* TigerAndRabbitTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TigerAndRabbitTests.m; sourceTree = "<group>"; };
+		11F4086427DDB26200609E7C /* TigerAndRabbitUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = TigerAndRabbitUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		11F4086827DDB26200609E7C /* TigerAndRabbitUITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TigerAndRabbitUITests.m; sourceTree = "<group>"; };
+		11F4086A27DDB26200609E7C /* TigerAndRabbitUITestsLaunchTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TigerAndRabbitUITestsLaunchTests.m; sourceTree = "<group>"; };
+		11FFC1AC27FB138600BD3CC0 /* TARBaseNavigationController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = TARBaseNavigationController.h; sourceTree = "<group>"; };
+		11FFC1AD27FB138600BD3CC0 /* TARBaseNavigationController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TARBaseNavigationController.m; sourceTree = "<group>"; };
+		11FFC1AF27FB158400BD3CC0 /* TARBaseTabBarController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = TARBaseTabBarController.h; sourceTree = "<group>"; };
+		11FFC1B027FB158400BD3CC0 /* TARBaseTabBarController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TARBaseTabBarController.m; sourceTree = "<group>"; };
+		13A92C7FFB426F38EBFE5175 /* libPods-TigerAndRabbit.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-TigerAndRabbit.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		250DE1923207DD08F4FBBD57 /* Pods-TigerAndRabbit.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TigerAndRabbit.release.xcconfig"; path = "Target Support Files/Pods-TigerAndRabbit/Pods-TigerAndRabbit.release.xcconfig"; sourceTree = "<group>"; };
+		903E1367BE02F1BC2E10E712 /* Pods-TigerAndRabbit.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TigerAndRabbit.debug.xcconfig"; path = "Target Support Files/Pods-TigerAndRabbit/Pods-TigerAndRabbit.debug.xcconfig"; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		11F4083C27DDB26200609E7C /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F803AEEBCD3CF1120F498C36 /* libPods-TigerAndRabbit.a in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		11F4085727DDB26200609E7C /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		11F4086127DDB26200609E7C /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		110FFA3329339FB400B7A51C /* 基础navigationController管理 */ = {
+			isa = PBXGroup;
+			children = (
+				110FFA342933A01D00B7A51C /* BaseNavigationControllerManager.h */,
+				110FFA352933A01D00B7A51C /* BaseNavigationControllerManager.m */,
+			);
+			path = "基础navigationController管理";
+			sourceTree = "<group>";
+		};
+		110FFA372933A0FE00B7A51C /* 基础navigationController配置资源 */ = {
+			isa = PBXGroup;
+			children = (
+				110FFA382933A15D00B7A51C /* BaseNavigationConfigPlist.plist */,
+			);
+			path = "基础navigationController配置资源";
+			sourceTree = "<group>";
+		};
+		110FFA3A2933AA6300B7A51C /* 各业务基础navigationController */ = {
+			isa = PBXGroup;
+			children = (
+				110FFA3B2933AC8800B7A51C /* HomeNavigationController.h */,
+				110FFA3C2933AC8800B7A51C /* HomeNavigationController.m */,
+			);
+			path = "各业务基础navigationController";
+			sourceTree = "<group>";
+		};
+		110FFA3F2933C7D400B7A51C /* BaseTabView */ = {
+			isa = PBXGroup;
+			children = (
+				110FFA402933C82300B7A51C /* HomeBaseViewController.h */,
+				110FFA412933C82300B7A51C /* HomeBaseViewController.m */,
+			);
+			path = BaseTabView;
+			sourceTree = "<group>";
+		};
+		110FFA432933C8AB00B7A51C /* Navigation */ = {
+			isa = PBXGroup;
+			children = (
+				110FFA3A2933AA6300B7A51C /* 各业务基础navigationController */,
+				110FFA372933A0FE00B7A51C /* 基础navigationController配置资源 */,
+				110FFA3329339FB400B7A51C /* 基础navigationController管理 */,
+				110FFA3E2933AE1800B7A51C /* BaseNavigationControllerProtocol.h */,
+				11FFC1AC27FB138600BD3CC0 /* TARBaseNavigationController.h */,
+				11FFC1AD27FB138600BD3CC0 /* TARBaseNavigationController.m */,
+			);
+			path = Navigation;
+			sourceTree = "<group>";
+		};
+		110FFA442933C8E100B7A51C /* TabBar */ = {
+			isa = PBXGroup;
+			children = (
+				11FFC1AF27FB158400BD3CC0 /* TARBaseTabBarController.h */,
+				11FFC1B027FB158400BD3CC0 /* TARBaseTabBarController.m */,
+			);
+			path = TabBar;
+			sourceTree = "<group>";
+		};
+		110FFA452933C91100B7A51C /* View */ = {
+			isa = PBXGroup;
+			children = (
+				110FFA3F2933C7D400B7A51C /* BaseTabView */,
+				11F4084827DDB26200609E7C /* TARBaseViewController.h */,
+				11F4084927DDB26200609E7C /* TARBaseViewController.m */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		114CF7902879AE65002B265F /* Tool */ = {
+			isa = PBXGroup;
+			children = (
+				114CF7962879B2CD002B265F /* SystemSize */,
+				114CF7912879AE82002B265F /* ColorDefine */,
+			);
+			path = Tool;
+			sourceTree = "<group>";
+		};
+		114CF7912879AE82002B265F /* ColorDefine */ = {
+			isa = PBXGroup;
+			children = (
+				114CF7952879AF9C002B265F /* ColorerDefine.h */,
+			);
+			path = ColorDefine;
+			sourceTree = "<group>";
+		};
+		114CF7962879B2CD002B265F /* SystemSize */ = {
+			isa = PBXGroup;
+			children = (
+				114CF7972879B2FB002B265F /* SystemSize.h */,
+			);
+			path = SystemSize;
+			sourceTree = "<group>";
+		};
+		1157429527FC948100759A25 /* baseController */ = {
+			isa = PBXGroup;
+			children = (
+				110FFA452933C91100B7A51C /* View */,
+				110FFA442933C8E100B7A51C /* TabBar */,
+				110FFA432933C8AB00B7A51C /* Navigation */,
+			);
+			path = baseController;
+			sourceTree = "<group>";
+		};
+		116DDAE927DE0C7C007AA812 /* TestController */ = {
+			isa = PBXGroup;
+			children = (
+				116DDAEA27DE0CCF007AA812 /* viewBControllerViewController.h */,
+				116DDAEB27DE0CCF007AA812 /* viewBControllerViewController.m */,
+			);
+			path = TestController;
+			sourceTree = "<group>";
+		};
+		11F4083627DDB26200609E7C = {
+			isa = PBXGroup;
+			children = (
+				11F4084127DDB26200609E7C /* TigerAndRabbit */,
+				11F4085D27DDB26200609E7C /* TigerAndRabbitTests */,
+				11F4086727DDB26200609E7C /* TigerAndRabbitUITests */,
+				11F4084027DDB26200609E7C /* Products */,
+				DF5EDEA172A6FAA3727E520F /* Pods */,
+				52A6F8FEBC8F0F09DFEF2314 /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		11F4084027DDB26200609E7C /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				11F4083F27DDB26200609E7C /* TigerAndRabbit.app */,
+				11F4085A27DDB26200609E7C /* TigerAndRabbitTests.xctest */,
+				11F4086427DDB26200609E7C /* TigerAndRabbitUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		11F4084127DDB26200609E7C /* TigerAndRabbit */ = {
+			isa = PBXGroup;
+			children = (
+				114CF7902879AE65002B265F /* Tool */,
+				1157429527FC948100759A25 /* baseController */,
+				116DDAE927DE0C7C007AA812 /* TestController */,
+				11F4084227DDB26200609E7C /* AppDelegate.h */,
+				11F4084327DDB26200609E7C /* AppDelegate.m */,
+				11F4084527DDB26200609E7C /* SceneDelegate.h */,
+				11F4084627DDB26200609E7C /* SceneDelegate.m */,
+				11F4084E27DDB26200609E7C /* Assets.xcassets */,
+				11F4085327DDB26200609E7C /* Info.plist */,
+				11F4085427DDB26200609E7C /* main.m */,
+			);
+			path = TigerAndRabbit;
+			sourceTree = "<group>";
+		};
+		11F4085D27DDB26200609E7C /* TigerAndRabbitTests */ = {
+			isa = PBXGroup;
+			children = (
+				11F4085E27DDB26200609E7C /* TigerAndRabbitTests.m */,
+			);
+			path = TigerAndRabbitTests;
+			sourceTree = "<group>";
+		};
+		11F4086727DDB26200609E7C /* TigerAndRabbitUITests */ = {
+			isa = PBXGroup;
+			children = (
+				11F4086827DDB26200609E7C /* TigerAndRabbitUITests.m */,
+				11F4086A27DDB26200609E7C /* TigerAndRabbitUITestsLaunchTests.m */,
+			);
+			path = TigerAndRabbitUITests;
+			sourceTree = "<group>";
+		};
+		52A6F8FEBC8F0F09DFEF2314 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				13A92C7FFB426F38EBFE5175 /* libPods-TigerAndRabbit.a */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		DF5EDEA172A6FAA3727E520F /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				903E1367BE02F1BC2E10E712 /* Pods-TigerAndRabbit.debug.xcconfig */,
+				250DE1923207DD08F4FBBD57 /* Pods-TigerAndRabbit.release.xcconfig */,
+			);
+			path = Pods;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		11F4083E27DDB26200609E7C /* TigerAndRabbit */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 11F4086E27DDB26200609E7C /* Build configuration list for PBXNativeTarget "TigerAndRabbit" */;
+			buildPhases = (
+				11EFE99C3C3212B9019003D1 /* [CP] Check Pods Manifest.lock */,
+				11F4083B27DDB26200609E7C /* Sources */,
+				11F4083C27DDB26200609E7C /* Frameworks */,
+				11F4083D27DDB26200609E7C /* Resources */,
+				8AD1A5FBEE4E547DCCB97BAA /* [CP] Copy Pods Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = TigerAndRabbit;
+			productName = TigerAndRabbit;
+			productReference = 11F4083F27DDB26200609E7C /* TigerAndRabbit.app */;
+			productType = "com.apple.product-type.application";
+		};
+		11F4085927DDB26200609E7C /* TigerAndRabbitTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 11F4087127DDB26200609E7C /* Build configuration list for PBXNativeTarget "TigerAndRabbitTests" */;
+			buildPhases = (
+				11F4085627DDB26200609E7C /* Sources */,
+				11F4085727DDB26200609E7C /* Frameworks */,
+				11F4085827DDB26200609E7C /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				11F4085C27DDB26200609E7C /* PBXTargetDependency */,
+			);
+			name = TigerAndRabbitTests;
+			productName = TigerAndRabbitTests;
+			productReference = 11F4085A27DDB26200609E7C /* TigerAndRabbitTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		11F4086327DDB26200609E7C /* TigerAndRabbitUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 11F4087427DDB26200609E7C /* Build configuration list for PBXNativeTarget "TigerAndRabbitUITests" */;
+			buildPhases = (
+				11F4086027DDB26200609E7C /* Sources */,
+				11F4086127DDB26200609E7C /* Frameworks */,
+				11F4086227DDB26200609E7C /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				11F4086627DDB26200609E7C /* PBXTargetDependency */,
+			);
+			name = TigerAndRabbitUITests;
+			productName = TigerAndRabbitUITests;
+			productReference = 11F4086427DDB26200609E7C /* TigerAndRabbitUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		11F4083727DDB26200609E7C /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = 1;
+				LastUpgradeCheck = 1320;
+				TargetAttributes = {
+					11F4083E27DDB26200609E7C = {
+						CreatedOnToolsVersion = 13.2.1;
+					};
+					11F4085927DDB26200609E7C = {
+						CreatedOnToolsVersion = 13.2.1;
+						TestTargetID = 11F4083E27DDB26200609E7C;
+					};
+					11F4086327DDB26200609E7C = {
+						CreatedOnToolsVersion = 13.2.1;
+						TestTargetID = 11F4083E27DDB26200609E7C;
+					};
+				};
+			};
+			buildConfigurationList = 11F4083A27DDB26200609E7C /* Build configuration list for PBXProject "TigerAndRabbit" */;
+			compatibilityVersion = "Xcode 13.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 11F4083627DDB26200609E7C;
+			productRefGroup = 11F4084027DDB26200609E7C /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				11F4083E27DDB26200609E7C /* TigerAndRabbit */,
+				11F4085927DDB26200609E7C /* TigerAndRabbitTests */,
+				11F4086327DDB26200609E7C /* TigerAndRabbitUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		11F4083D27DDB26200609E7C /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				110FFA392933A15D00B7A51C /* BaseNavigationConfigPlist.plist in Resources */,
+				11F4084F27DDB26200609E7C /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		11F4085827DDB26200609E7C /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		11F4086227DDB26200609E7C /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		11EFE99C3C3212B9019003D1 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-TigerAndRabbit-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		8AD1A5FBEE4E547DCCB97BAA /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-TigerAndRabbit/Pods-TigerAndRabbit-resources-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Copy Pods Resources";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-TigerAndRabbit/Pods-TigerAndRabbit-resources-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-TigerAndRabbit/Pods-TigerAndRabbit-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		11F4083B27DDB26200609E7C /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				110FFA3D2933AC8800B7A51C /* HomeNavigationController.m in Sources */,
+				11FFC1B127FB158400BD3CC0 /* TARBaseTabBarController.m in Sources */,
+				116DDAEC27DE0CCF007AA812 /* viewBControllerViewController.m in Sources */,
+				11F4084A27DDB26200609E7C /* TARBaseViewController.m in Sources */,
+				110FFA422933C82300B7A51C /* HomeBaseViewController.m in Sources */,
+				11F4084427DDB26200609E7C /* AppDelegate.m in Sources */,
+				11F4085527DDB26200609E7C /* main.m in Sources */,
+				11FFC1AE27FB138600BD3CC0 /* TARBaseNavigationController.m in Sources */,
+				11F4084727DDB26200609E7C /* SceneDelegate.m in Sources */,
+				110FFA362933A01D00B7A51C /* BaseNavigationControllerManager.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		11F4085627DDB26200609E7C /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				11F4085F27DDB26200609E7C /* TigerAndRabbitTests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		11F4086027DDB26200609E7C /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				11F4086B27DDB26200609E7C /* TigerAndRabbitUITestsLaunchTests.m in Sources */,
+				11F4086927DDB26200609E7C /* TigerAndRabbitUITests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		11F4085C27DDB26200609E7C /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 11F4083E27DDB26200609E7C /* TigerAndRabbit */;
+			targetProxy = 11F4085B27DDB26200609E7C /* PBXContainerItemProxy */;
+		};
+		11F4086627DDB26200609E7C /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 11F4083E27DDB26200609E7C /* TigerAndRabbit */;
+			targetProxy = 11F4086527DDB26200609E7C /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin XCBuildConfiguration section */
+		11F4086C27DDB26200609E7C /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++17";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				INFOPLIST_KEY_NSMainStoryboardFile = "";
+				INFOPLIST_KEY_UILaunchStoryboardName = "";
+				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+			};
+			name = Debug;
+		};
+		11F4086D27DDB26200609E7C /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++17";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				INFOPLIST_KEY_NSMainStoryboardFile = "";
+				INFOPLIST_KEY_UILaunchStoryboardName = "";
+				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		11F4086F27DDB26200609E7C /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 903E1367BE02F1BC2E10E712 /* Pods-TigerAndRabbit.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = SD39Y7ZXKR;
+				EXCLUDED_ARCHS = "EXCLUDED_ARCHS__EFFECTIVE_PLATFORM_SUFFIX_simulator__NATIVE_ARCH_64_BIT_x86_64=arm64 arm64e armv7 armv7s armv6 armv8 EXCLUDED_ARCHS=$(inherited) $(EXCLUDED_ARCHS__EFFECTIVE_PLATFORM_SUFFIX_$(EFFECTIVE_PLATFORM_SUFFIX)__NATIVE_ARCH_64_BIT_$(NATIVE_ARCH_64_BIT))";
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = TigerAndRabbit/Info.plist;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
+				INFOPLIST_KEY_UIMainStoryboardFile = "";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = kwb.TigerAndRabbit;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		11F4087027DDB26200609E7C /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 250DE1923207DD08F4FBBD57 /* Pods-TigerAndRabbit.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = SD39Y7ZXKR;
+				EXCLUDED_ARCHS = "EXCLUDED_ARCHS__EFFECTIVE_PLATFORM_SUFFIX_simulator__NATIVE_ARCH_64_BIT_x86_64=arm64 arm64e armv7 armv7s armv6 armv8 EXCLUDED_ARCHS=$(inherited) $(EXCLUDED_ARCHS__EFFECTIVE_PLATFORM_SUFFIX_$(EFFECTIVE_PLATFORM_SUFFIX)__NATIVE_ARCH_64_BIT_$(NATIVE_ARCH_64_BIT))";
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = TigerAndRabbit/Info.plist;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
+				INFOPLIST_KEY_UIMainStoryboardFile = "";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = kwb.TigerAndRabbit;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		11F4087227DDB26200609E7C /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = SD39Y7ZXKR;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.2;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = kwb.TigerAndRabbitTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/TigerAndRabbit.app/TigerAndRabbit";
+			};
+			name = Debug;
+		};
+		11F4087327DDB26200609E7C /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = SD39Y7ZXKR;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.2;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = kwb.TigerAndRabbitTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/TigerAndRabbit.app/TigerAndRabbit";
+			};
+			name = Release;
+		};
+		11F4087527DDB26200609E7C /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = SD39Y7ZXKR;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = kwb.TigerAndRabbitUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = TigerAndRabbit;
+			};
+			name = Debug;
+		};
+		11F4087627DDB26200609E7C /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = SD39Y7ZXKR;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = kwb.TigerAndRabbitUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = TigerAndRabbit;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		11F4083A27DDB26200609E7C /* Build configuration list for PBXProject "TigerAndRabbit" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				11F4086C27DDB26200609E7C /* Debug */,
+				11F4086D27DDB26200609E7C /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		11F4086E27DDB26200609E7C /* Build configuration list for PBXNativeTarget "TigerAndRabbit" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				11F4086F27DDB26200609E7C /* Debug */,
+				11F4087027DDB26200609E7C /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		11F4087127DDB26200609E7C /* Build configuration list for PBXNativeTarget "TigerAndRabbitTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				11F4087227DDB26200609E7C /* Debug */,
+				11F4087327DDB26200609E7C /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		11F4087427DDB26200609E7C /* Build configuration list for PBXNativeTarget "TigerAndRabbitUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				11F4087527DDB26200609E7C /* Debug */,
+				11F4087627DDB26200609E7C /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 11F4083727DDB26200609E7C /* Project object */;
+}

@@ -21,7 +21,7 @@
         UIWindowScene *windowScene = (UIWindowScene *)scene;
         self.window = [[UIWindow alloc] initWithWindowScene:windowScene];
         self.window.frame = windowScene.coordinateSpace.bounds;
-        self.window.rootViewController = [[TARBaseTabBarController shareInstance] getbaseTabBar];
+        self.window.rootViewController = [TARBaseTabBarController creteBaseTabBar];
         [self.window makeKeyAndVisible];
         [[DoraemonManager shareInstance] install];
 

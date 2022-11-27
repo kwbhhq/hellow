@@ -11,9 +11,7 @@ NS_ASSUME_NONNULL_BEGIN
 
 @interface TARBaseTabBarController : UITabBarController
 
-+ (instancetype) shareInstance;
-
-- (TARBaseTabBarController *)getbaseTabBar;
++ (instancetype)creteBaseTabBar;
 
 @end
 

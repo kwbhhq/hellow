@@ -20,7 +20,7 @@
     if (@available(iOS 13.0, *)) {
     } else {
         self.window = [[UIWindow alloc] initWithFrame:[UIScreen mainScreen].bounds];
-        self.window.rootViewController = [[TARBaseTabBarController shareInstance] getbaseTabBar];
+        self.window.rootViewController = [TARBaseTabBarController creteBaseTabBar];
         [self.window makeKeyAndVisible];
         [[DoraemonManager shareInstance] install];
     }
