@@ -7,7 +7,7 @@
 
 #import "AppDelegate.h"
 #import "DoraemonManager.h"
-#import "TARBaseTabBarController.h"
+#import "BaseTabBarManager.h"
 
 @interface AppDelegate ()
 
@@ -20,7 +20,7 @@
     if (@available(iOS 13.0, *)) {
     } else {
         self.window = [[UIWindow alloc] initWithFrame:[UIScreen mainScreen].bounds];
-        self.window.rootViewController = [TARBaseTabBarController creteBaseTabBar];
+        self.window.rootViewController = [[BaseTabBarManager shareInstance] creteBaseTabBar];
         [self.window makeKeyAndVisible];
         [[DoraemonManager shareInstance] install];
     }

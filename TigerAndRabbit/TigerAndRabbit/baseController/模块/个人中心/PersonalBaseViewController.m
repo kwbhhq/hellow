@@ -1,17 +1,17 @@
 //
-//  HomeBaseViewController.m
+//  PersonalBaseViewController.m
 //  TigerAndRabbit
 //
-//  Created by 康文波 on 2022/11/28.
+//  Created by 康文波 on 2022/12/11.
 //
 
-#import "HomeBaseViewController.h"
+#import "PersonalBaseViewController.h"
 
-@interface HomeBaseViewController ()
+@interface PersonalBaseViewController ()
 
 @end
 
-@implementation HomeBaseViewController
+@implementation PersonalBaseViewController
 
 - (void)viewDidLoad {
     [super viewDidLoad];

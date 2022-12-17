@@ -24,4 +24,9 @@
     return _instance ;
 }
 
+- (void)viewDidLoad {
+    [super viewDidLoad];
+    self.tabBarItem.title = @"首页";
+}
+
 @end

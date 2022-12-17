@@ -6,7 +6,7 @@
 //
 
 #import "SceneDelegate.h"
-#import "TARBaseTabBarController.h"
+#import "BaseTabBarManager.h"
 #import "DoraemonManager.h"
 
 @interface SceneDelegate ()
@@ -21,7 +21,7 @@
         UIWindowScene *windowScene = (UIWindowScene *)scene;
         self.window = [[UIWindow alloc] initWithWindowScene:windowScene];
         self.window.frame = windowScene.coordinateSpace.bounds;
-        self.window.rootViewController = [TARBaseTabBarController creteBaseTabBar];
+        self.window.rootViewController = [[BaseTabBarManager shareInstance] creteBaseTabBar];
         [self.window makeKeyAndVisible];
         [[DoraemonManager shareInstance] install];
 

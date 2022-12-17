@@ -11,8 +11,6 @@ NS_ASSUME_NONNULL_BEGIN
 
 @interface TARBaseTabBarController : UITabBarController
 
-+ (instancetype)creteBaseTabBar;
-
 @end
 
 NS_ASSUME_NONNULL_END

@@ -9,14 +9,23 @@
 #import "BaseNavigationControllerManager.h"
 #import "Masonry.h"
 
+@interface TARBaseTabBarController()<UITabBarControllerDelegate>
+
+@end
+
 @implementation TARBaseTabBarController
 
 #pragma market -- public
-+ (instancetype)creteBaseTabBar {
-    TARBaseTabBarController *baseTabBarController = [[TARBaseTabBarController alloc] init];
-    baseTabBarController.tabBar.backgroundColor = [UIColor whiteColor];
-    [baseTabBarController setViewControllers:[BaseNavigationControllerManager createBaseNavigationControllerArray]];
-    return baseTabBarController;
+- (instancetype)init {
+    if(self=[super init]) {
+        [self initialization];
+    }
+    return self;
+}
+
+- (void)initialization {
+    self.tabBar.backgroundColor = [UIColor whiteColor];
+    [self setViewControllers:[BaseNavigationControllerManager createBaseNavigationControllerArray]];
 }
 
 @end

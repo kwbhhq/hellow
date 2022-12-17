@@ -10,6 +10,5 @@
 
 @interface TARBaseViewController : UIViewController
 
-
 @end
 
