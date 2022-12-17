@@ -19,7 +19,7 @@ NS_ASSUME_NONNULL_BEGIN
 /// - Parameters:
 ///   - pageId: 要跳转的页面id
 ///   - params: 跳转时携带的页面参数
-+(void)jumpWithPageId:(int)pageId params:(NSDictionary *)params;
++(void)jumpWithPageId:(int)pageId params:(nullable NSDictionary *)params;
 
 @end
 

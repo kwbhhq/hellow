@@ -7,6 +7,7 @@
 
 #import "BaseTabBarManager.h"
 #import "TARBaseTabBarController.h"
+#import "BaseViewControllerProtocol.h"
 
 @interface BaseTabBarManager()<UITabBarControllerDelegate>
 
@@ -37,6 +38,10 @@
 - (void)pushToView:(UIViewController *)viewController params:(nullable NSDictionary *)params {
     if(!viewController) {
         return;
+    }
+    if([viewController conformsToProtocol:@protocol(BaseViewControllerProtocol)]) {
+        id<BaseViewControllerProtocol> jumpViewController = (id<BaseViewControllerProtocol>)viewController;
+        [jumpViewController setParams:params];
     }
     [self.baseTabBar.selectedViewController pushViewController:viewController animated:NO];
 }

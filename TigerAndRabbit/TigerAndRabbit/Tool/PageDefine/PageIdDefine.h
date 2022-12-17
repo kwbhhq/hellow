@@ -8,9 +8,9 @@
 #ifndef PageIdDefine_h
 #define PageIdDefine_h
 
-#define HOME_BASE_VIEW      1000
-#define PERSONAL_BASE_VIEW      1001
-#define JYJY_BASE_VIEW      1002
+#define HOME_BASE_VIEW      1000            //HomeBaseViewController控制器
+#define PERSONAL_BASE_VIEW      1001        //PersonalBaseViewController控制器
+#define JYJY_BASE_VIEW      1002            //JYJYViewController剑与家园控制器
 
 
 #endif /* PageIdDefine_h */

@@ -16,7 +16,7 @@
     [self jumpWithPageId:pageId params:nil];
 }
 
-+(void)jumpWithPageId:(int)pageId params:(NSDictionary *)params {
++(void)jumpWithPageId:(int)pageId params:(nullable NSDictionary *)params {
     id viewController = [self getViewControllerWithPageId:pageId];
     if([viewController isKindOfClass:[UIViewController class]]) {
         UIViewController *jumpViewController = (UIViewController *)viewController;

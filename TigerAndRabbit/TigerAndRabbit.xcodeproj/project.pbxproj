@@ -64,6 +64,7 @@
 		110FFA3E2933AE1800B7A51C /* BaseNavigationControllerProtocol.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = BaseNavigationControllerProtocol.h; sourceTree = "<group>"; };
 		110FFA402933C82300B7A51C /* HomeBaseViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = HomeBaseViewController.h; sourceTree = "<group>"; };
 		110FFA412933C82300B7A51C /* HomeBaseViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = HomeBaseViewController.m; sourceTree = "<group>"; };
+		11473558294DFB6B00B56BC9 /* BaseViewControllerProtocol.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = BaseViewControllerProtocol.h; sourceTree = "<group>"; };
 		114CF7952879AF9C002B265F /* ColorerDefine.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ColorerDefine.h; sourceTree = "<group>"; };
 		114CF7972879B2FB002B265F /* SystemSize.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SystemSize.h; sourceTree = "<group>"; };
 		114E31A72945A8E6009ECACC /* ComingSoonDataModel.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ComingSoonDataModel.h; sourceTree = "<group>"; };
@@ -215,6 +216,7 @@
 				114E31AD29460403009ECACC /* 首页 */,
 				11F4084827DDB26200609E7C /* TARBaseViewController.h */,
 				11F4084927DDB26200609E7C /* TARBaseViewController.m */,
+				11473558294DFB6B00B56BC9 /* BaseViewControllerProtocol.h */,
 			);
 			path = "模块";
 			sourceTree = "<group>";

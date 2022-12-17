@@ -7,8 +7,9 @@
 
 #import <UIKit/UIKit.h>
 #import "SystemSize.h"
+#import "BaseViewControllerProtocol.h"
 
-@interface TARBaseViewController : UIViewController
+@interface TARBaseViewController : UIViewController<BaseViewControllerProtocol>
 
 @end
 
