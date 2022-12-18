@@ -6,8 +6,22 @@
 //
 
 #import "JYJYViewController.h"
+#import "ColorerDefine.h"
+#import "Masonry.h"
+#import "JYJYDataModelManager.h"
+#import "Nsarray+SafetyArray.h"
+#import "JYJYSupportFuncCell.h"
+#import "JYJYSupportFuncHeadView.h"
 
-@interface JYJYViewController ()
+#define JYJYSUPPORTFUNCCELL     @"JYJYSupportFuncCell"
+#define JYJYSUPPORTFUNHEADVIEW     @"JYJYSupportFuncHeadView"
+#define CELLHEIGHT              44
+
+@interface JYJYViewController ()<UITableViewDelegate,UITableViewDataSource>
+
+@property (nonatomic,strong)JYJYDataModelManager *tableViewManager;
+
+@property(nonatomic,strong)UITableView *functionTableview;
 
 @end
 
@@ -15,17 +29,82 @@
 
 - (void)viewDidLoad {
     [super viewDidLoad];
-    // Do any additional setup after loading the view.
+    self.navigationItem.title = @"剑与家园";
+    [self.tableViewManager configData];
 }
 
-/*
-#pragma mark - Navigation
-
-// In a storyboard-based application, you will often want to do a little preparation before navigation
-- (void)prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender {
-    // Get the new view controller using [segue destinationViewController].
-    // Pass the selected object to the new view controller.
+- (void)viewWillAppear:(BOOL)animated {
+    [super viewWillAppear:animated];
+    [self createView];
 }
-*/
+
+- (void)createView {
+    self.view.backgroundColor = CONTROLLERVIEWBACKCOLOR;
+    [self.view addSubview:self.functionTableview];
+    [self makeConstraints];
+}
+
+- (void)makeConstraints {
+    [self.functionTableview mas_makeConstraints:^(MASConstraintMaker *make) {
+        make.top.left.right.bottom.equalTo(self.view);
+    }];
+}
+
+#pragma mark -- UITableViewDataSource
+
+- (NSInteger)numberOfSectionsInTableView:(UITableView *)tableView {
+    return self.tableViewManager.dataModelArray.count;
+}
+
+- (NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section {
+    JYJYDataSectionModel *sectionModel = [self.tableViewManager.dataModelArray safetyObjectAtIndex:section];
+    return sectionModel.supportFunctionArray.count;
+}
+
+- (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath {
+    JYJYSupportFuncCell *functionCell = [tableView dequeueReusableCellWithIdentifier:JYJYSUPPORTFUNCCELL forIndexPath:indexPath];
+    JYJYDataSectionModel *sectionModel = [self.tableViewManager.dataModelArray safetyObjectAtIndex:indexPath.section];
+    [functionCell configFunctionModel:[sectionModel.supportFunctionArray safetyObjectAtIndex:indexPath.item]];
+    return functionCell;
+}
+
+- (UIView *)tableView:(UITableView *)tableView viewForHeaderInSection:(NSInteger)section {
+    JYJYSupportFuncHeadView *functionheadView = [tableView dequeueReusableHeaderFooterViewWithIdentifier:JYJYSUPPORTFUNHEADVIEW];
+    if(!functionheadView) {
+        functionheadView = [[JYJYSupportFuncHeadView alloc] init];
+    }
+    JYJYDataSectionModel *sectionModel = [self.tableViewManager.dataModelArray safetyObjectAtIndex:section];
+    [functionheadView configHeadWithTitle:sectionModel.sectionName];
+    return functionheadView;
+}
+
+- (CGFloat)tableView:(UITableView *)tableView heightForRowAtIndexPath:(NSIndexPath *)indexPath{
+    return CELLHEIGHT;
+}
+
+- (CGFloat)tableView:(UITableView *)tableView heightForHeaderInSection:(NSInteger)section {
+    return CELLHEIGHT;
+}
+
+#pragma mark -- lazy
+
+- (UITableView *)functionTableview {
+    if(!_functionTableview) {
+        _functionTableview = [[UITableView alloc] init];
+        _functionTableview.backgroundColor = [UIColor clearColor];
+        _functionTableview.delegate = self;
+        _functionTableview.dataSource = self;
+        [_functionTableview registerClass:[JYJYSupportFuncCell class] forCellReuseIdentifier:JYJYSUPPORTFUNCCELL];
+        [_functionTableview registerClass:[JYJYSupportFuncHeadView class] forHeaderFooterViewReuseIdentifier:JYJYSUPPORTFUNHEADVIEW];
+    }
+    return _functionTableview;
+}
+
+- (JYJYDataModelManager *)tableViewManager {
+    if(!_tableViewManager) {
+        _tableViewManager = [[JYJYDataModelManager alloc] init];
+    }
+    return _tableViewManager;
+}
 
 @end

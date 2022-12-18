@@ -7,6 +7,8 @@
 
 #import "HomeBaseViewCollectionCell.h"
 #import "Masonry.h"
+#import "UIFont+TARFontTool.h"
+#import "ColorerDefine.h"
 
 @interface HomeBaseViewCollectionCell()
 
@@ -84,7 +86,7 @@
 - (UILabel *)titleLabel {
     if(!_titleLabel) {
         _titleLabel = [[UILabel alloc] init];
-        _titleLabel.font = [UIFont boldSystemFontOfSize:16.0f];
+        _titleLabel.font = [UIFont pingFangSCSemibold:15.0f];
     }
     return _titleLabel;
 }
@@ -92,7 +94,8 @@
 - (UILabel *)describeLabel {
     if(!_describeLabel) {
         _describeLabel = [[UILabel alloc] init];
-        _describeLabel.font = [UIFont systemFontOfSize:14.0f];
+        _describeLabel.textColor = DESCRIBETEXTCOLOR;
+        _describeLabel.font = [UIFont pingFangSCRegular:12.0f];
         _describeLabel.numberOfLines = 3;
     }
     return _describeLabel;

@@ -11,6 +11,12 @@
 		110FFA392933A15D00B7A51C /* BaseNavigationConfigPlist.plist in Resources */ = {isa = PBXBuildFile; fileRef = 110FFA382933A15D00B7A51C /* BaseNavigationConfigPlist.plist */; };
 		110FFA3D2933AC8800B7A51C /* HomeNavigationController.m in Sources */ = {isa = PBXBuildFile; fileRef = 110FFA3C2933AC8800B7A51C /* HomeNavigationController.m */; };
 		110FFA422933C82300B7A51C /* HomeBaseViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 110FFA412933C82300B7A51C /* HomeBaseViewController.m */; };
+		1122B67C294ECD7200B50DA9 /* HunXiaModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 1122B67B294ECD7200B50DA9 /* HunXiaModel.m */; };
+		1122B67F294ED9AE00B50DA9 /* JYJYSupportFuncHeadView.m in Sources */ = {isa = PBXBuildFile; fileRef = 1122B67E294ED9AE00B50DA9 /* JYJYSupportFuncHeadView.m */; };
+		1122B683294F0DD200B50DA9 /* UIFont+TARFontTool.m in Sources */ = {isa = PBXBuildFile; fileRef = 1122B682294F0DD200B50DA9 /* UIFont+TARFontTool.m */; };
+		1147355D294E369B00B56BC9 /* JYJYDataModelManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 1147355C294E369B00B56BC9 /* JYJYDataModelManager.m */; };
+		11473561294E377300B56BC9 /* JYJYDataSectionModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 11473560294E377300B56BC9 /* JYJYDataSectionModel.m */; };
+		11473565294E393200B56BC9 /* JYJYSupportFuncCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 11473564294E393200B56BC9 /* JYJYSupportFuncCell.m */; };
 		114E31A92945A8E6009ECACC /* ComingSoonDataModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 114E31A82945A8E6009ECACC /* ComingSoonDataModel.m */; };
 		114E31AC2945B101009ECACC /* HomeBaseReusableView.m in Sources */ = {isa = PBXBuildFile; fileRef = 114E31AB2945B101009ECACC /* HomeBaseReusableView.m */; };
 		114E31B329460C74009ECACC /* JYJYViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 114E31B229460C74009ECACC /* JYJYViewController.m */; };
@@ -64,7 +70,20 @@
 		110FFA3E2933AE1800B7A51C /* BaseNavigationControllerProtocol.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = BaseNavigationControllerProtocol.h; sourceTree = "<group>"; };
 		110FFA402933C82300B7A51C /* HomeBaseViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = HomeBaseViewController.h; sourceTree = "<group>"; };
 		110FFA412933C82300B7A51C /* HomeBaseViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = HomeBaseViewController.m; sourceTree = "<group>"; };
+		1122B67A294ECD7200B50DA9 /* HunXiaModel.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = HunXiaModel.h; sourceTree = "<group>"; };
+		1122B67B294ECD7200B50DA9 /* HunXiaModel.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = HunXiaModel.m; sourceTree = "<group>"; };
+		1122B67D294ED9AE00B50DA9 /* JYJYSupportFuncHeadView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = JYJYSupportFuncHeadView.h; sourceTree = "<group>"; };
+		1122B67E294ED9AE00B50DA9 /* JYJYSupportFuncHeadView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = JYJYSupportFuncHeadView.m; sourceTree = "<group>"; };
+		1122B681294F0DD200B50DA9 /* UIFont+TARFontTool.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "UIFont+TARFontTool.h"; sourceTree = "<group>"; };
+		1122B682294F0DD200B50DA9 /* UIFont+TARFontTool.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "UIFont+TARFontTool.m"; sourceTree = "<group>"; };
 		11473558294DFB6B00B56BC9 /* BaseViewControllerProtocol.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = BaseViewControllerProtocol.h; sourceTree = "<group>"; };
+		1147355B294E369B00B56BC9 /* JYJYDataModelManager.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = JYJYDataModelManager.h; sourceTree = "<group>"; };
+		1147355C294E369B00B56BC9 /* JYJYDataModelManager.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = JYJYDataModelManager.m; sourceTree = "<group>"; };
+		1147355E294E36C700B56BC9 /* JYJYDataModelProtocol.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = JYJYDataModelProtocol.h; sourceTree = "<group>"; };
+		1147355F294E377300B56BC9 /* JYJYDataSectionModel.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = JYJYDataSectionModel.h; sourceTree = "<group>"; };
+		11473560294E377300B56BC9 /* JYJYDataSectionModel.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = JYJYDataSectionModel.m; sourceTree = "<group>"; };
+		11473563294E393200B56BC9 /* JYJYSupportFuncCell.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = JYJYSupportFuncCell.h; sourceTree = "<group>"; };
+		11473564294E393200B56BC9 /* JYJYSupportFuncCell.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = JYJYSupportFuncCell.m; sourceTree = "<group>"; };
 		114CF7952879AF9C002B265F /* ColorerDefine.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ColorerDefine.h; sourceTree = "<group>"; };
 		114CF7972879B2FB002B265F /* SystemSize.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SystemSize.h; sourceTree = "<group>"; };
 		114E31A72945A8E6009ECACC /* ComingSoonDataModel.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ComingSoonDataModel.h; sourceTree = "<group>"; };
@@ -221,9 +240,51 @@
 			path = "模块";
 			sourceTree = "<group>";
 		};
+		1122B680294F0D8E00B50DA9 /* FontTool */ = {
+			isa = PBXGroup;
+			children = (
+				1122B681294F0DD200B50DA9 /* UIFont+TARFontTool.h */,
+				1122B682294F0DD200B50DA9 /* UIFont+TARFontTool.m */,
+			);
+			path = FontTool;
+			sourceTree = "<group>";
+		};
+		11473559294E365B00B56BC9 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				1147355E294E36C700B56BC9 /* JYJYDataModelProtocol.h */,
+				1147355F294E377300B56BC9 /* JYJYDataSectionModel.h */,
+				11473560294E377300B56BC9 /* JYJYDataSectionModel.m */,
+				1122B67A294ECD7200B50DA9 /* HunXiaModel.h */,
+				1122B67B294ECD7200B50DA9 /* HunXiaModel.m */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		1147355A294E366800B56BC9 /* Manager */ = {
+			isa = PBXGroup;
+			children = (
+				1147355B294E369B00B56BC9 /* JYJYDataModelManager.h */,
+				1147355C294E369B00B56BC9 /* JYJYDataModelManager.m */,
+			);
+			path = Manager;
+			sourceTree = "<group>";
+		};
+		11473562294E38EF00B56BC9 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				11473563294E393200B56BC9 /* JYJYSupportFuncCell.h */,
+				11473564294E393200B56BC9 /* JYJYSupportFuncCell.m */,
+				1122B67D294ED9AE00B50DA9 /* JYJYSupportFuncHeadView.h */,
+				1122B67E294ED9AE00B50DA9 /* JYJYSupportFuncHeadView.m */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
 		114CF7902879AE65002B265F /* Tool */ = {
 			isa = PBXGroup;
 			children = (
+				1122B680294F0D8E00B50DA9 /* FontTool */,
 				114E31C129463472009ECACC /* PageDefine */,
 				1179E5762943991F005E5190 /* SafeMethod */,
 				114CF7962879B2CD002B265F /* SystemSize */,
@@ -279,6 +340,9 @@
 		114E31B0294605A0009ECACC /* 剑与家园 */ = {
 			isa = PBXGroup;
 			children = (
+				11473562294E38EF00B56BC9 /* View */,
+				1147355A294E366800B56BC9 /* Manager */,
+				11473559294E365B00B56BC9 /* Model */,
 				114E31B129460C74009ECACC /* JYJYViewController.h */,
 				114E31B229460C74009ECACC /* JYJYViewController.m */,
 			);
@@ -619,12 +683,16 @@
 				114E31B72946160E009ECACC /* PersonalBaseViewController.m in Sources */,
 				11F4084A27DDB26200609E7C /* TARBaseViewController.m in Sources */,
 				114E31AC2945B101009ECACC /* HomeBaseReusableView.m in Sources */,
+				11473561294E377300B56BC9 /* JYJYDataSectionModel.m in Sources */,
 				110FFA422933C82300B7A51C /* HomeBaseViewController.m in Sources */,
 				114E31BD29461A96009ECACC /* BaseTabBarManager.m in Sources */,
+				1122B67F294ED9AE00B50DA9 /* JYJYSupportFuncHeadView.m in Sources */,
 				114E31C5294635B7009ECACC /* PageViewTool.m in Sources */,
 				11F4084427DDB26200609E7C /* AppDelegate.m in Sources */,
+				1122B67C294ECD7200B50DA9 /* HunXiaModel.m in Sources */,
 				114E31A92945A8E6009ECACC /* ComingSoonDataModel.m in Sources */,
 				1179E580294426EC005E5190 /* HomeBaseViewCollectionCell.m in Sources */,
+				1122B683294F0DD200B50DA9 /* UIFont+TARFontTool.m in Sources */,
 				11F4085527DDB26200609E7C /* main.m in Sources */,
 				11FFC1AE27FB138600BD3CC0 /* TARBaseNavigationController.m in Sources */,
 				114E31BA29461685009ECACC /* PersonalNavigationController.m in Sources */,
@@ -634,6 +702,8 @@
 				11F4084727DDB26200609E7C /* SceneDelegate.m in Sources */,
 				1179E57229439330005E5190 /* SwordAndHomeModel.m in Sources */,
 				110FFA362933A01D00B7A51C /* BaseNavigationControllerManager.m in Sources */,
+				11473565294E393200B56BC9 /* JYJYSupportFuncCell.m in Sources */,
+				1147355D294E369B00B56BC9 /* JYJYDataModelManager.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

@@ -34,6 +34,8 @@
     }];
 }
 
+#pragma mark -- public
+
 - (void)configHeadWithTitle:(NSString *)title {
     self.titleLabel.text = title;
 }

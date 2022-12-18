@@ -20,7 +20,21 @@
 
 - (void)viewDidLoad {
     [super viewDidLoad];
+    [self baseViewConfig];
+}
+
+//基础视图配置
+- (void)baseViewConfig {
+    //配置导航栏
     self.edgesForExtendedLayout = UIRectEdgeNone;
+    //配置返回按钮
+    UIBarButtonItem *backButton = [[UIBarButtonItem alloc] init];
+    backButton.title = @"";
+    self.navigationItem.backBarButtonItem = backButton;
+    //配置tableview
+    if (@available(iOS 15.0, *)) {
+      [UITableView appearance].sectionHeaderTopPadding = 0;
+    }
 }
 
 
