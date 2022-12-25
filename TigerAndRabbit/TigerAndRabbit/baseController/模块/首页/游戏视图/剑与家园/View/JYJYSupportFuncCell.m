@@ -18,6 +18,8 @@
 @property(nonatomic,weak)id<JYJYDataModelProtocol> funcModel;
 //描述label
 @property(nonatomic,strong)UILabel *describeLabel;
+//分割线
+@property(nonatomic,strong)UIView *lineView;
 
 @end
 
@@ -30,14 +32,10 @@
     return self;
 }
 
-- (void)configFunctionModel:(id<JYJYDataModelProtocol>)funcModel {
-    self.funcModel = funcModel;
-    [self configData];
-}
-
 -(void)createBaseView {
     [self.contentView addSubview:self.titleLabel];
     [self.contentView addSubview:self.describeLabel];
+    [self.contentView addSubview:self.lineView];
     [self configLayout];
 }
 
@@ -51,11 +49,28 @@
         make.right.equalTo(self.contentView.mas_right).offset(-32);
         make.centerY.equalTo(self.contentView);
     }];
+    
+    [self.lineView mas_makeConstraints:^(MASConstraintMaker *make) {
+        make.bottom.equalTo(self.contentView);
+        make.left.equalTo(self.contentView).offset(16);
+        make.right.equalTo(self.contentView.mas_right).offset(-16);
+        make.height.mas_equalTo(1);
+    }];
 }
 
-- (void)configData {
+#pragma mark -- public
+
+- (void)configFunctionModel:(id<JYJYDataModelProtocol>)funcModel isLastCell:(BOOL)isLastCell {
+    self.funcModel = funcModel;
+    [self configDataWithIsLastCell:isLastCell];
+}
+
+#pragma mark -- private
+
+- (void)configDataWithIsLastCell:(BOOL)isLastCell {
     self.titleLabel.text = [self.funcModel functionName];
     self.describeLabel.text = [self.funcModel describeContent];
+    self.lineView.hidden = isLastCell;
 }
 
 #pragma mark -- lazy
@@ -75,6 +90,14 @@
         _describeLabel.font = [UIFont pingFangSCRegular:13.0f];
     }
     return _describeLabel;
+}
+
+- (UIView *)lineView {
+    if(!_lineView) {
+        _lineView = [[UIView alloc] init];
+        _lineView.backgroundColor = CONTROLLERVIEWBACKCOLOR;
+    }
+    return _lineView;
 }
 
 @end

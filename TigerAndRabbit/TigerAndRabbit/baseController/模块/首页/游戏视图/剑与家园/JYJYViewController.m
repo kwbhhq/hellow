@@ -63,8 +63,12 @@
 
 - (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath {
     JYJYSupportFuncCell *functionCell = [tableView dequeueReusableCellWithIdentifier:JYJYSUPPORTFUNCCELL forIndexPath:indexPath];
+    functionCell.selectionStyle = UITableViewCellSelectionStyleNone;
+
     JYJYDataSectionModel *sectionModel = [self.tableViewManager.dataModelArray safetyObjectAtIndex:indexPath.section];
-    [functionCell configFunctionModel:[sectionModel.supportFunctionArray safetyObjectAtIndex:indexPath.item]];
+    BOOL isLastCell = sectionModel.supportFunctionArray.count == indexPath.item + 1;
+    id<JYJYDataModelProtocol> cellModel = [sectionModel.supportFunctionArray safetyObjectAtIndex:indexPath.item];
+    [functionCell configFunctionModel:cellModel isLastCell:isLastCell];
     return functionCell;
 }
 
@@ -94,6 +98,7 @@
         _functionTableview.backgroundColor = [UIColor clearColor];
         _functionTableview.delegate = self;
         _functionTableview.dataSource = self;
+        _functionTableview.separatorStyle = UITableViewCellSeparatorStyleNone;
         [_functionTableview registerClass:[JYJYSupportFuncCell class] forCellReuseIdentifier:JYJYSUPPORTFUNCCELL];
         [_functionTableview registerClass:[JYJYSupportFuncHeadView class] forHeaderFooterViewReuseIdentifier:JYJYSUPPORTFUNHEADVIEW];
     }

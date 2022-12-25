@@ -12,7 +12,7 @@ NS_ASSUME_NONNULL_BEGIN
 
 @interface JYJYSupportFuncCell : UITableViewCell
 
-- (void)configFunctionModel:(id<JYJYDataModelProtocol>)funcModel;
+- (void)configFunctionModel:(id<JYJYDataModelProtocol>)funcModel isLastCell:(BOOL)isLastCell;
 
 @end
 

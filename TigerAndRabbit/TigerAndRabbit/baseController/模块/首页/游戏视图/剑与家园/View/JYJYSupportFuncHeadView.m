@@ -7,6 +7,7 @@
 
 #import "JYJYSupportFuncHeadView.h"
 #import "Masonry.h"
+#import "ColorerDefine.h"
 #import "UIFont+TARFontTool.h"
 
 @interface JYJYSupportFuncHeadView()
@@ -26,6 +27,7 @@
 }
 
 -(void)createReusableView {
+    self.contentView.backgroundColor = GAMECELLCOLOR;
     [self.contentView addSubview:self.titleLabel];
     [self.titleLabel mas_makeConstraints:^(MASConstraintMaker *make) {
         make.left.mas_equalTo(self.contentView).offset(16);

@@ -14,7 +14,7 @@
 }
 
 - (NSString *)describeContent {
-    return @"副标题";
+    return @"英雄魂匣";
 }
 
 @end
