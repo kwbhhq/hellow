@@ -4,4 +4,5 @@ target:'TigerAndRabbit' do
 xcodeproj 'TigerAndRabbit.xcodeproj’
 pod 'Masonry'
 pod 'DoraemonKit/Core'
+pod 'YYModel'
 end

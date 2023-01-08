@@ -6,6 +6,7 @@
 //
 
 #import <Foundation/Foundation.h>
+#import "PageIdDefine.h"
 
 NS_ASSUME_NONNULL_BEGIN
 

@@ -12,6 +12,7 @@
 #import "Nsarray+SafetyArray.h"
 #import "JYJYSupportFuncCell.h"
 #import "JYJYSupportFuncHeadView.h"
+#import "PageViewTool.h"
 
 #define JYJYSUPPORTFUNCCELL     @"JYJYSupportFuncCell"
 #define JYJYSUPPORTFUNHEADVIEW     @"JYJYSupportFuncHeadView"
@@ -88,6 +89,10 @@
 
 - (CGFloat)tableView:(UITableView *)tableView heightForHeaderInSection:(NSInteger)section {
     return CELLHEIGHT;
+}
+
+- (void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath {
+    [PageViewTool jumpWithPageId:HX_BASEE_VIEW];
 }
 
 #pragma mark -- lazy

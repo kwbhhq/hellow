@@ -14,6 +14,10 @@
 		1122B67C294ECD7200B50DA9 /* HunXiaModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 1122B67B294ECD7200B50DA9 /* HunXiaModel.m */; };
 		1122B67F294ED9AE00B50DA9 /* JYJYSupportFuncHeadView.m in Sources */ = {isa = PBXBuildFile; fileRef = 1122B67E294ED9AE00B50DA9 /* JYJYSupportFuncHeadView.m */; };
 		1122B683294F0DD200B50DA9 /* UIFont+TARFontTool.m in Sources */ = {isa = PBXBuildFile; fileRef = 1122B682294F0DD200B50DA9 /* UIFont+TARFontTool.m */; };
+		1137CF4F29581CBC000A58A6 /* HunXiaController.m in Sources */ = {isa = PBXBuildFile; fileRef = 1137CF4E29581CBC000A58A6 /* HunXiaController.m */; };
+		1137CF5229581D55000A58A6 /* HunXiaData.plist in Resources */ = {isa = PBXBuildFile; fileRef = 1137CF5129581D55000A58A6 /* HunXiaData.plist */; };
+		1137CF552958A33E000A58A6 /* HunXiaDataManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 1137CF542958A33E000A58A6 /* HunXiaDataManager.m */; };
+		1137CF592958A42A000A58A6 /* HunXiaDataModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 1137CF582958A42A000A58A6 /* HunXiaDataModel.m */; };
 		1147355D294E369B00B56BC9 /* JYJYDataModelManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 1147355C294E369B00B56BC9 /* JYJYDataModelManager.m */; };
 		11473561294E377300B56BC9 /* JYJYDataSectionModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 11473560294E377300B56BC9 /* JYJYDataSectionModel.m */; };
 		11473565294E393200B56BC9 /* JYJYSupportFuncCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 11473564294E393200B56BC9 /* JYJYSupportFuncCell.m */; };
@@ -26,6 +30,11 @@
 		114E31C0294624EE009ECACC /* PageList.plist in Resources */ = {isa = PBXBuildFile; fileRef = 114E31BF294624EE009ECACC /* PageList.plist */; };
 		114E31C5294635B7009ECACC /* PageViewTool.m in Sources */ = {isa = PBXBuildFile; fileRef = 114E31C4294635B7009ECACC /* PageViewTool.m */; };
 		116DDAEC27DE0CCF007AA812 /* viewBControllerViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 116DDAEB27DE0CCF007AA812 /* viewBControllerViewController.m */; };
+		1176B7712961348100B5E5E9 /* DisplayView.m in Sources */ = {isa = PBXBuildFile; fileRef = 1176B7702961348100B5E5E9 /* DisplayView.m */; };
+		1176B77429613FEF00B5E5E9 /* DisplayViewCollectionViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 1176B77329613FEF00B5E5E9 /* DisplayViewCollectionViewCell.m */; };
+		1176B7782963133A00B5E5E9 /* HunXiaDisplayModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 1176B7772963133A00B5E5E9 /* HunXiaDisplayModel.m */; };
+		1176B77B296B08DB00B5E5E9 /* DisplayViewTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 1176B77A296B08DB00B5E5E9 /* DisplayViewTableViewCell.m */; };
+		1176B77F296B276200B5E5E9 /* Nsstring+TextStyleTool.m in Sources */ = {isa = PBXBuildFile; fileRef = 1176B77E296B276200B5E5E9 /* Nsstring+TextStyleTool.m */; };
 		1179E57229439330005E5190 /* SwordAndHomeModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 1179E57129439330005E5190 /* SwordAndHomeModel.m */; };
 		1179E5752943968B005E5190 /* BaseViewManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 1179E5742943968B005E5190 /* BaseViewManager.m */; };
 		1179E57929439A35005E5190 /* Nsarray+SafetyArray.m in Sources */ = {isa = PBXBuildFile; fileRef = 1179E57829439A35005E5190 /* Nsarray+SafetyArray.m */; };
@@ -76,6 +85,13 @@
 		1122B67E294ED9AE00B50DA9 /* JYJYSupportFuncHeadView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = JYJYSupportFuncHeadView.m; sourceTree = "<group>"; };
 		1122B681294F0DD200B50DA9 /* UIFont+TARFontTool.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "UIFont+TARFontTool.h"; sourceTree = "<group>"; };
 		1122B682294F0DD200B50DA9 /* UIFont+TARFontTool.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "UIFont+TARFontTool.m"; sourceTree = "<group>"; };
+		1137CF4D29581CBC000A58A6 /* HunXiaController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = HunXiaController.h; sourceTree = "<group>"; };
+		1137CF4E29581CBC000A58A6 /* HunXiaController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = HunXiaController.m; sourceTree = "<group>"; };
+		1137CF5129581D55000A58A6 /* HunXiaData.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = HunXiaData.plist; sourceTree = "<group>"; };
+		1137CF532958A33E000A58A6 /* HunXiaDataManager.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = HunXiaDataManager.h; sourceTree = "<group>"; };
+		1137CF542958A33E000A58A6 /* HunXiaDataManager.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = HunXiaDataManager.m; sourceTree = "<group>"; };
+		1137CF572958A42A000A58A6 /* HunXiaDataModel.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = HunXiaDataModel.h; sourceTree = "<group>"; };
+		1137CF582958A42A000A58A6 /* HunXiaDataModel.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = HunXiaDataModel.m; sourceTree = "<group>"; };
 		11473558294DFB6B00B56BC9 /* BaseViewControllerProtocol.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = BaseViewControllerProtocol.h; sourceTree = "<group>"; };
 		1147355B294E369B00B56BC9 /* JYJYDataModelManager.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = JYJYDataModelManager.h; sourceTree = "<group>"; };
 		1147355C294E369B00B56BC9 /* JYJYDataModelManager.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = JYJYDataModelManager.m; sourceTree = "<group>"; };
@@ -104,6 +120,17 @@
 		114E31C4294635B7009ECACC /* PageViewTool.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = PageViewTool.m; sourceTree = "<group>"; };
 		116DDAEA27DE0CCF007AA812 /* viewBControllerViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = viewBControllerViewController.h; sourceTree = "<group>"; };
 		116DDAEB27DE0CCF007AA812 /* viewBControllerViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = viewBControllerViewController.m; sourceTree = "<group>"; };
+		1176B76F2961348100B5E5E9 /* DisplayView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = DisplayView.h; sourceTree = "<group>"; };
+		1176B7702961348100B5E5E9 /* DisplayView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = DisplayView.m; sourceTree = "<group>"; };
+		1176B77229613FEF00B5E5E9 /* DisplayViewCollectionViewCell.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = DisplayViewCollectionViewCell.h; sourceTree = "<group>"; };
+		1176B77329613FEF00B5E5E9 /* DisplayViewCollectionViewCell.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = DisplayViewCollectionViewCell.m; sourceTree = "<group>"; };
+		1176B7752961615000B5E5E9 /* DisplayViewProtocol.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = DisplayViewProtocol.h; sourceTree = "<group>"; };
+		1176B7762963133A00B5E5E9 /* HunXiaDisplayModel.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = HunXiaDisplayModel.h; sourceTree = "<group>"; };
+		1176B7772963133A00B5E5E9 /* HunXiaDisplayModel.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = HunXiaDisplayModel.m; sourceTree = "<group>"; };
+		1176B779296B08DB00B5E5E9 /* DisplayViewTableViewCell.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = DisplayViewTableViewCell.h; sourceTree = "<group>"; };
+		1176B77A296B08DB00B5E5E9 /* DisplayViewTableViewCell.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = DisplayViewTableViewCell.m; sourceTree = "<group>"; };
+		1176B77D296B276200B5E5E9 /* Nsstring+TextStyleTool.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "Nsstring+TextStyleTool.h"; sourceTree = "<group>"; };
+		1176B77E296B276200B5E5E9 /* Nsstring+TextStyleTool.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "Nsstring+TextStyleTool.m"; sourceTree = "<group>"; };
 		1179E56E2943924E005E5190 /* HomeBaseViewProtocol.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = HomeBaseViewProtocol.h; sourceTree = "<group>"; };
 		1179E57029439330005E5190 /* SwordAndHomeModel.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SwordAndHomeModel.h; sourceTree = "<group>"; };
 		1179E57129439330005E5190 /* SwordAndHomeModel.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SwordAndHomeModel.m; sourceTree = "<group>"; };
@@ -249,6 +276,47 @@
 			path = FontTool;
 			sourceTree = "<group>";
 		};
+		1137CF4B29581C66000A58A6 /* 魂匣功能 */ = {
+			isa = PBXGroup;
+			children = (
+				1176B76E2961335300B5E5E9 /* ViewCompone */,
+				1137CF562958A409000A58A6 /* Model */,
+				1137CF5029581D2F000A58A6 /* Resources */,
+				1137CF4C29581C85000A58A6 /* Controller */,
+			);
+			path = "魂匣功能";
+			sourceTree = "<group>";
+		};
+		1137CF4C29581C85000A58A6 /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				1137CF4D29581CBC000A58A6 /* HunXiaController.h */,
+				1137CF4E29581CBC000A58A6 /* HunXiaController.m */,
+				1137CF532958A33E000A58A6 /* HunXiaDataManager.h */,
+				1137CF542958A33E000A58A6 /* HunXiaDataManager.m */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		1137CF5029581D2F000A58A6 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				1137CF5129581D55000A58A6 /* HunXiaData.plist */,
+			);
+			path = Resources;
+			sourceTree = "<group>";
+		};
+		1137CF562958A409000A58A6 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				1137CF572958A42A000A58A6 /* HunXiaDataModel.h */,
+				1137CF582958A42A000A58A6 /* HunXiaDataModel.m */,
+				1176B7762963133A00B5E5E9 /* HunXiaDisplayModel.h */,
+				1176B7772963133A00B5E5E9 /* HunXiaDisplayModel.m */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
 		11473559294E365B00B56BC9 /* Model */ = {
 			isa = PBXGroup;
 			children = (
@@ -284,6 +352,7 @@
 		114CF7902879AE65002B265F /* Tool */ = {
 			isa = PBXGroup;
 			children = (
+				1176B77C296B271D00B5E5E9 /* NSStringTool */,
 				1122B680294F0D8E00B50DA9 /* FontTool */,
 				114E31C129463472009ECACC /* PageDefine */,
 				1179E5762943991F005E5190 /* SafeMethod */,
@@ -340,6 +409,7 @@
 		114E31B0294605A0009ECACC /* 剑与家园 */ = {
 			isa = PBXGroup;
 			children = (
+				1137CF4B29581C66000A58A6 /* 魂匣功能 */,
 				11473562294E38EF00B56BC9 /* View */,
 				1147355A294E366800B56BC9 /* Manager */,
 				11473559294E365B00B56BC9 /* Model */,
@@ -393,6 +463,29 @@
 				116DDAEB27DE0CCF007AA812 /* viewBControllerViewController.m */,
 			);
 			path = TestController;
+			sourceTree = "<group>";
+		};
+		1176B76E2961335300B5E5E9 /* ViewCompone */ = {
+			isa = PBXGroup;
+			children = (
+				1176B76F2961348100B5E5E9 /* DisplayView.h */,
+				1176B7702961348100B5E5E9 /* DisplayView.m */,
+				1176B77229613FEF00B5E5E9 /* DisplayViewCollectionViewCell.h */,
+				1176B77329613FEF00B5E5E9 /* DisplayViewCollectionViewCell.m */,
+				1176B7752961615000B5E5E9 /* DisplayViewProtocol.h */,
+				1176B779296B08DB00B5E5E9 /* DisplayViewTableViewCell.h */,
+				1176B77A296B08DB00B5E5E9 /* DisplayViewTableViewCell.m */,
+			);
+			path = ViewCompone;
+			sourceTree = "<group>";
+		};
+		1176B77C296B271D00B5E5E9 /* NSStringTool */ = {
+			isa = PBXGroup;
+			children = (
+				1176B77D296B276200B5E5E9 /* Nsstring+TextStyleTool.h */,
+				1176B77E296B276200B5E5E9 /* Nsstring+TextStyleTool.m */,
+			);
+			path = NSStringTool;
 			sourceTree = "<group>";
 		};
 		1179E56F2943928E005E5190 /* HomeBaseviewDataModel */ = {
@@ -610,6 +703,7 @@
 				114E31C0294624EE009ECACC /* PageList.plist in Resources */,
 				110FFA392933A15D00B7A51C /* BaseNavigationConfigPlist.plist in Resources */,
 				11F4084F27DDB26200609E7C /* Assets.xcassets in Resources */,
+				1137CF5229581D55000A58A6 /* HunXiaData.plist in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -681,6 +775,7 @@
 				11FFC1B127FB158400BD3CC0 /* TARBaseTabBarController.m in Sources */,
 				116DDAEC27DE0CCF007AA812 /* viewBControllerViewController.m in Sources */,
 				114E31B72946160E009ECACC /* PersonalBaseViewController.m in Sources */,
+				1176B77F296B276200B5E5E9 /* Nsstring+TextStyleTool.m in Sources */,
 				11F4084A27DDB26200609E7C /* TARBaseViewController.m in Sources */,
 				114E31AC2945B101009ECACC /* HomeBaseReusableView.m in Sources */,
 				11473561294E377300B56BC9 /* JYJYDataSectionModel.m in Sources */,
@@ -688,8 +783,11 @@
 				114E31BD29461A96009ECACC /* BaseTabBarManager.m in Sources */,
 				1122B67F294ED9AE00B50DA9 /* JYJYSupportFuncHeadView.m in Sources */,
 				114E31C5294635B7009ECACC /* PageViewTool.m in Sources */,
+				1137CF4F29581CBC000A58A6 /* HunXiaController.m in Sources */,
 				11F4084427DDB26200609E7C /* AppDelegate.m in Sources */,
+				1176B77429613FEF00B5E5E9 /* DisplayViewCollectionViewCell.m in Sources */,
 				1122B67C294ECD7200B50DA9 /* HunXiaModel.m in Sources */,
+				1176B7712961348100B5E5E9 /* DisplayView.m in Sources */,
 				114E31A92945A8E6009ECACC /* ComingSoonDataModel.m in Sources */,
 				1179E580294426EC005E5190 /* HomeBaseViewCollectionCell.m in Sources */,
 				1122B683294F0DD200B50DA9 /* UIFont+TARFontTool.m in Sources */,
@@ -698,8 +796,12 @@
 				114E31BA29461685009ECACC /* PersonalNavigationController.m in Sources */,
 				114E31B329460C74009ECACC /* JYJYViewController.m in Sources */,
 				1179E57929439A35005E5190 /* Nsarray+SafetyArray.m in Sources */,
+				1137CF592958A42A000A58A6 /* HunXiaDataModel.m in Sources */,
 				1179E57C2943A08A005E5190 /* HomeBaseViewSectionModel.m in Sources */,
+				1137CF552958A33E000A58A6 /* HunXiaDataManager.m in Sources */,
 				11F4084727DDB26200609E7C /* SceneDelegate.m in Sources */,
+				1176B77B296B08DB00B5E5E9 /* DisplayViewTableViewCell.m in Sources */,
+				1176B7782963133A00B5E5E9 /* HunXiaDisplayModel.m in Sources */,
 				1179E57229439330005E5190 /* SwordAndHomeModel.m in Sources */,
 				110FFA362933A01D00B7A51C /* BaseNavigationControllerManager.m in Sources */,
 				11473565294E393200B56BC9 /* JYJYSupportFuncCell.m in Sources */,
@@ -862,6 +964,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				ASSETCATALOG_COMPILER_INCLUDE_ALL_APPICON_ASSETS = YES;
 				CODE_SIGN_IDENTITY = "Apple Development";
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
@@ -893,6 +996,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				ASSETCATALOG_COMPILER_INCLUDE_ALL_APPICON_ASSETS = YES;
 				CODE_SIGN_IDENTITY = "Apple Development";
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
